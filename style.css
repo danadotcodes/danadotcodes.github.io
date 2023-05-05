@@ -6,7 +6,7 @@
   --clr-neutral-400: #4a4e74; /* Icons */
   --clr-neutral-700: #2b2839; /* Text */
 
-  --ff-regular: "Karla", Arial, sans-serif;
+  --ff-regular: "Noto Serif JP", serif;
 
   --fw-light: 200;
   --fw-regular: 400;
@@ -31,7 +31,6 @@ body {
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -54,32 +53,79 @@ select {
 /* ----- GENERAL STYLES ----- */
 
 body {
+  display: grid;
+  grid-template: auto / 1fr 320px 1fr;
+  background-color: rgba(14, 106, 244, 0.946);
+}
+
+.placeholder {
+  grid-column: 2 / 3;
+  justify-content: center;
+  width: 320px;
   font-family: var(--ff-regular);
-  font-weight: var(--fw-regular);
   color: var(--clr-neutral-700);
-  background-color: var(--clr-neutral-200); 
+  text-align: center;
+  padding-top: 1rem;
 }
 
-/* ----- UTILITIES ----- */
+/* ----- TYPOGRAPHY ----- */
 
-/* Screen Reader Only */
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+h1 {
+  color: var(--clr-neutral-200);
 }
 
-/* ----- BUTTONS ----- */
+#dana {
+  font-size: 7.125rem;
+  line-height: 5rem;
+}
 
-/* ----- ICONS ----- */
+#codes {
+  display: block;
+  font-size: 6.75rem;
+  line-height: 4.75rem;
+}
 
-/* ----- LAYOUT ----- */
+#under {
+  font-size: 6.5rem;
+  line-height: 8rem;
+}
 
-/* ----- BLOCK STYLES ----- */
+#construction {
+  font-size: 3.1rem;
+  line-height: 0.5rem;
+}
 
-/* ----- MEDIA QUERIES ----- */
+#watch {
+  font-size: 6.75rem;
+  line-height: 8rem;
+}
 
+#this {
+  font-size: 11rem;
+  line-height: 7rem;
+}
+
+#space {
+  font-size: 7.25rem;
+  line-height: 5.5rem;
+}
+
+#coming {
+  font-size: 5.325rem;
+  line-height: 6.5rem;
+}
+
+#soon {
+  font-size: 8.5rem;
+  line-height: 3.5rem;
+}
+
+#stay {
+  font-size: 10.125rem;
+  line-height: 9.5rem;
+}
+
+#tuned {
+  font-size: 6.875rem;
+  line-height: 6rem;
+}
